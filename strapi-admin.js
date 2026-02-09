@@ -28,7 +28,7 @@ export default {
             items: [
               {
                 name: 'options',
-                type: 'json',
+                type: 'textarea',
                 intlLabel: {
                   id: 'dynamic-enum.options.enum',
                   defaultMessage: 'Initial Options',
