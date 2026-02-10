@@ -29,9 +29,22 @@ const DynamicEnumInput = ({
     let opts = [];
     if (typeof initialOptions === 'string') {
       try {
-        opts = JSON.parse(initialOptions);
+        const parsed = JSON.parse(initialOptions);
+        if (Array.isArray(parsed)) {
+          opts = parsed;
+        } else {
+          // If valid JSON but not an array (e.g. string/number), treat as text
+          opts = initialOptions
+            .split('\n')
+            .map((o) => o.trim())
+            .filter(Boolean);
+        }
       } catch {
-        opts = [];
+        // Not valid JSON, treat as newline-separated text
+        opts = initialOptions
+          .split('\n')
+          .map((o) => o.trim())
+          .filter(Boolean);
       }
     } else {
       opts = Array.isArray(initialOptions) ? initialOptions : [];

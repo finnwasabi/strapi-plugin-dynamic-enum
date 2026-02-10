@@ -1,6 +1,6 @@
 {
   "name": "@tunghtml/strapi-plugin-dynamic-enum",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Strapi custom field plugin for enum with dynamic option creation",
   "keywords": [
     "strapi",

@@ -35,12 +35,11 @@ export default {
                 },
                 description: {
                   id: 'dynamic-enum.options.enum.description',
-                  defaultMessage:
-                    'Enter initial enum values as JSON array: ["Option 1", "Option 2"]',
+                  defaultMessage: 'Enter initial enum values, one per line',
                 },
                 placeholder: {
                   id: 'dynamic-enum.options.enum.placeholder',
-                  defaultMessage: '["Option 1", "Option 2", "Option 3"]',
+                  defaultMessage: 'Option 1\nOption 2\nOption 3',
                 },
               },
               {
