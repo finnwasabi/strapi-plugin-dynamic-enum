@@ -78,3 +78,7 @@ MIT
 ## Repository
 
 [https://github.com/finnwasabi/strapi-plugin-dynamic-enum](https://github.com/finnwasabi/strapi-plugin-dynamic-enum)
+
+---
+
+Built by **Tung Le**. More Strapi plugins and case studies at [tungln.is-a.dev](https://tungln.is-a.dev).
