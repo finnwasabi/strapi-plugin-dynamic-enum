@@ -49,6 +49,7 @@ const DynamicEnumInput = ({
     } else {
       opts = Array.isArray(initialOptions) ? initialOptions : [];
     }
+    opts = opts.map((o) => String(o));
 
     // Add current value to options if it doesn't exist
     if (value && !opts.includes(value)) {
